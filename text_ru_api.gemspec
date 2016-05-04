@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/kinderly/text_ru_api'
   s.summary = 'A wrapper for text.ru api'
   s.license = 'MIT'
-  s.files = `git ls-files --{spec}/*`.split("\n")
+  s.files = `git ls-files`.split("\n")
   s.require_paths = ['lib']
 
   s.add_dependency 'httparty'
