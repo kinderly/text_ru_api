@@ -31,7 +31,7 @@ module TextRuApi
     end
 
     def call
-      if LIMITS.include(@text.delete(' ').size)
+      if LIMITS.include?(@text.delete(' ').size)
         data = { text: @text }.merge(params)
         Request.new.result(data).parsed_response
         # Возвращается
