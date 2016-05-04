@@ -3,7 +3,7 @@ module TextRuApi
     BALANCE_URL = 'http://api.text.ru/account'
 
     def initialize(access_token = nil)
-      @access_token = access_token || ENV['text_ru_api_token']
+      @access_token = access_token || ENV['TEXT_RU_API_TOKEN']
     end
 
     def call
