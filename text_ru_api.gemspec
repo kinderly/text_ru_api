@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'text_ru_api'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.authors = ['Kinderly LTD', 'pustserg']
   s.email = 'pustserg@yandex.ru'
   s.homepage = 'https://github.com/kinderly/text_ru_api'

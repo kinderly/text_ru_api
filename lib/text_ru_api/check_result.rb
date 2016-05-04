@@ -9,7 +9,7 @@ module TextRuApi
     end
 
     def call
-      data = { uid: @text_uid }.merge(params)
+      data = { uid: @text_uid }.merge(@params)
       Request.new.result(data).parsed_response
       # возвращает
       #
