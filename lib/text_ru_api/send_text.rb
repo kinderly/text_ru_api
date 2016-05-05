@@ -30,10 +30,10 @@ module TextRuApi
       @params = params
     end
 
-    def call
+    def call(access_token = nil)
       if LIMITS.include?(@text.delete(' ').size)
         data = { text: @text }.merge(@params)
-        Request.new.result(data).parsed_response
+        Request.new(access_token).result(data).parsed_response
         # Возвращается
         # text_uid - уникальный идентификатор текста.
         # Используется при последующем получении результатов проверки.

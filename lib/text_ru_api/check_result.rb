@@ -8,9 +8,9 @@ module TextRuApi
       @params = params
     end
 
-    def call
+    def call(access_token = nil)
       data = { uid: @text_uid }.merge(@params)
-      Request.new.result(data).parsed_response
+      Request.new(access_token).result(data).parsed_response
       # возвращает
       #
       # text_unique - уникальность текста в процентах с точностью до
