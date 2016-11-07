@@ -1,6 +1,6 @@
 module TextRuApi
   class Request
-    URL = 'http://api.text.ru/post'.freeze
+    URL = 'https://api.text.ru/post'.freeze
     def initialize(access_token = nil)
       @access_token = access_token || ENV['TEXT_RU_API_TOKEN']
     end
